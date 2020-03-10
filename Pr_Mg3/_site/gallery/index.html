@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="/assets/css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<nav>
+	<ul>
+		<li>
+			<a href="/">Home</a>
+		</li>
+		<li>
+			<a href="/profile">Profile</a>
+		</li>
+		<li>
+			<a href="/gallery">Gallery</a>
+		</li>
+	</ul>
+</nav>
+	<section>
+		<h1> Gallery</h1>
+
+    <div class="container">
+        <div><img src="/assets/img/IMG_8883.jpg" alt="" style="width: 100%; height: 100px;">
+        <p>Puncak LDOP</p>
+        </div>
+        <div><img src="/assets/img/itera.png" alt="" style="width: 100%; height: 100px;">
+        <p>Logo ITERA</p>
+        </div>
+        <div><img src="/assets/img/IMG_8890.jpg" alt="" style="width: 100%; height: 100px;">
+        <p>Puncak LDOP</p>
+        </div>
+    </div>
+	</section>
+	
+	<script>
+		window.onload = autoJalan();
+		function autoJalan() {
+			
+			var date = new Date();
+			var jam = parseInt(date.getHours());
+
+			if (jam>18) {
+			   	var element = document.body;
+			   	element.classList.toggle("modegelap");
+			}
+		}
+	</script>
+	
+</body>
+</html>
